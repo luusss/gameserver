@@ -213,7 +213,44 @@ if (isConditionTrue_0) {
 
 
 };gdjs.preCode.mapOfGDgdjs_9546preCode_9546GDairwallObjects1Objects = Hashtable.newFrom({"airwall": gdjs.preCode.GDairwallObjects1});
-gdjs.preCode.eventsList2 = function(runtimeScene) {
+gdjs.preCode.eventsList2 = function(runtimeScene, asyncObjectsList) {
+
+{
+
+
+let isConditionTrue_0 = false;
+{
+{gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(3).getAsString(), runtimeScene.getGame().getVariables().getFromIndex(0));
+}{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "GameOver", false);
+}}
+
+}
+
+
+};gdjs.preCode.asyncCallback10107220 = function (runtimeScene, asyncObjectsList) {
+asyncObjectsList.restoreLocalVariablesContainers(gdjs.preCode.localVariables);
+
+{ //Subevents
+gdjs.preCode.eventsList2(runtimeScene, asyncObjectsList);} //End of subevents
+gdjs.preCode.localVariables.length = 0;
+}
+gdjs.preCode.eventsList3 = function(runtimeScene) {
+
+{
+
+
+{
+{
+const asyncObjectsList = new gdjs.LongLivedObjectsList();
+asyncObjectsList.backupLocalVariablesContainers(gdjs.preCode.localVariables);
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("/postscore", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(1)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), gdjs.VariablesContainer.badVariable), (runtimeScene) => (gdjs.preCode.asyncCallback10107220(runtimeScene, asyncObjectsList)));
+}
+}
+
+}
+
+
+};gdjs.preCode.eventsList4 = function(runtimeScene) {
 
 {
 
@@ -236,8 +273,14 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "Countdown") >= 15;
 if (isConditionTrue_0) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "GameOver", false);
-}}
+}
+
+}
+
+
+{
+
+
 
 }
 
@@ -247,9 +290,26 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("time").getAsNumber() <= 0);
+isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN(runtimeScene, "Countdown") >= 15;
+if (isConditionTrue_0) {
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(11661252);
+}
 }
 if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.preCode.eventsList3(runtimeScene);} //End of subevents
+}
+
+}
+
+
+{
+
+
+let isConditionTrue_0 = false;
+{
 }
 
 }
@@ -265,7 +325,7 @@ gdjs.copyArray(asyncObjectsList.getObjects("touch"), gdjs.preCode.GDtouchObjects
 }
 }gdjs.preCode.localVariables.length = 0;
 }
-gdjs.preCode.eventsList3 = function(runtimeScene) {
+gdjs.preCode.eventsList5 = function(runtimeScene) {
 
 {
 
@@ -288,43 +348,7 @@ gdjs.preCode.mapOfGDgdjs_9546preCode_9546GDTwiggyObjects1Objects = Hashtable.new
 gdjs.preCode.mapOfGDgdjs_9546preCode_9546GDChickenObjects1Objects = Hashtable.newFrom({"Chicken": gdjs.preCode.GDChickenObjects1});
 gdjs.preCode.mapOfGDgdjs_9546preCode_9546GDTwiggyObjects1Objects = Hashtable.newFrom({"Twiggy": gdjs.preCode.GDTwiggyObjects1});
 gdjs.preCode.mapOfGDgdjs_9546preCode_9546GDdoorObjects1Objects = Hashtable.newFrom({"door": gdjs.preCode.GDdoorObjects1});
-gdjs.preCode.eventsList4 = function(runtimeScene, asyncObjectsList) {
-
-{
-
-
-let isConditionTrue_0 = false;
-{
-{gdjs.evtTools.network.jsonToVariableStructure(runtimeScene.getScene().getVariables().getFromIndex(3).getAsString(), runtimeScene.getGame().getVariables().getFromIndex(0));
-}}
-
-}
-
-
-};gdjs.preCode.asyncCallback12079524 = function (runtimeScene, asyncObjectsList) {
-asyncObjectsList.restoreLocalVariablesContainers(gdjs.preCode.localVariables);
-
-{ //Subevents
-gdjs.preCode.eventsList4(runtimeScene, asyncObjectsList);} //End of subevents
-gdjs.preCode.localVariables.length = 0;
-}
-gdjs.preCode.eventsList5 = function(runtimeScene) {
-
-{
-
-
-{
-{
-const asyncObjectsList = new gdjs.LongLivedObjectsList();
-asyncObjectsList.backupLocalVariablesContainers(gdjs.preCode.localVariables);
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.network.sendAwaitableAsyncRequest("/postscore", gdjs.evtTools.network.variableStructureToJSON(runtimeScene.getGame().getVariables().getFromIndex(1)), "POST", "application/json", runtimeScene.getScene().getVariables().getFromIndex(3), gdjs.VariablesContainer.badVariable), (runtimeScene) => (gdjs.preCode.asyncCallback12079524(runtimeScene, asyncObjectsList)));
-}
-}
-
-}
-
-
-};gdjs.preCode.mapOfGDgdjs_9546preCode_9546GDChickenObjects1Objects = Hashtable.newFrom({"Chicken": gdjs.preCode.GDChickenObjects1});
+gdjs.preCode.mapOfGDgdjs_9546preCode_9546GDChickenObjects1Objects = Hashtable.newFrom({"Chicken": gdjs.preCode.GDChickenObjects1});
 gdjs.preCode.mapOfGDgdjs_9546preCode_9546GDDuckObjects1Objects = Hashtable.newFrom({"Duck": gdjs.preCode.GDDuckObjects1});
 gdjs.preCode.eventsList6 = function(runtimeScene) {
 
@@ -552,7 +576,7 @@ if (isConditionTrue_0) {
 {
 
 
-gdjs.preCode.eventsList2(runtimeScene);
+gdjs.preCode.eventsList4(runtimeScene);
 }
 
 
@@ -616,7 +640,7 @@ gdjs.copyArray(runtimeScene.getObjects("touch"), gdjs.preCode.GDtouchObjects1);
 }
 }
 { //Subevents
-gdjs.preCode.eventsList3(runtimeScene);} //End of subevents
+gdjs.preCode.eventsList5(runtimeScene);} //End of subevents
 }
 
 }
@@ -693,20 +717,6 @@ if (isConditionTrue_0) {
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-{isConditionTrue_0 = (runtimeScene.getGame().getVariables().getFromIndex(1).getChild("time").getAsNumber() <= 0);
-}
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(12079364);
-}
-}
-if (isConditionTrue_0) {
-
-{ //Subevents
-gdjs.preCode.eventsList5(runtimeScene);} //End of subevents
-}
 
 }
 
