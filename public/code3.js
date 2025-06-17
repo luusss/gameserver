@@ -96,8 +96,8 @@ gdjs.copyArray(runtimeScene.getObjects("NewText6"), gdjs.GameOverCode.GDNewText6
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("buttom_0"), gdjs.GameOverCode.GDbuttom_95950Objects1);
-{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.GameOverCode.GDbuttom_95950Objects1.length !== 0 ? gdjs.GameOverCode.GDbuttom_95950Objects1[0] : null), true, "", 0);
+gdjs.copyArray(runtimeScene.getObjects("NewText2"), gdjs.GameOverCode.GDNewText2Objects1);
+{gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.GameOverCode.GDNewText2Objects1.length !== 0 ? gdjs.GameOverCode.GDNewText2Objects1[0] : null), true, "", 0);
 }}
 
 }
