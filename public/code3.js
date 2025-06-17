@@ -20,6 +20,12 @@ gdjs.GameOverCode.GDbackObjects1= [];
 gdjs.GameOverCode.GDbackObjects2= [];
 gdjs.GameOverCode.GDNewText3Objects1= [];
 gdjs.GameOverCode.GDNewText3Objects2= [];
+gdjs.GameOverCode.GDNewText4Objects1= [];
+gdjs.GameOverCode.GDNewText4Objects2= [];
+gdjs.GameOverCode.GDNewText5Objects1= [];
+gdjs.GameOverCode.GDNewText5Objects2= [];
+gdjs.GameOverCode.GDNewText6Objects1= [];
+gdjs.GameOverCode.GDNewText6Objects2= [];
 
 
 gdjs.GameOverCode.mapOfGDgdjs_9546GameOverCode_9546GDbuttom_959595950Objects1Objects = Hashtable.newFrom({"buttom_0": gdjs.GameOverCode.GDbuttom_95950Objects1});
@@ -50,9 +56,21 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.GameOverCode.GDNewText3Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NewText4"), gdjs.GameOverCode.GDNewText4Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NewText5"), gdjs.GameOverCode.GDNewText5Objects1);
+gdjs.copyArray(runtimeScene.getObjects("NewText6"), gdjs.GameOverCode.GDNewText6Objects1);
 {gdjs.evtTools.sound.playMusic(runtimeScene, "3938a34c4b22efe9c3bfe7a3c4413bdc65468d15944869fd733517f647ea38b7_Night in Venice.aac", false, 20, 1);
 }{for(var i = 0, len = gdjs.GameOverCode.GDNewText3Objects1.length ;i < len;++i) {
     gdjs.GameOverCode.GDNewText3Objects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("score").getAsNumber()));
+}
+}{for(var i = 0, len = gdjs.GameOverCode.GDNewText4Objects1.length ;i < len;++i) {
+    gdjs.GameOverCode.GDNewText4Objects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(0).getChild(0).getChild("score").getAsNumber()));
+}
+}{for(var i = 0, len = gdjs.GameOverCode.GDNewText5Objects1.length ;i < len;++i) {
+    gdjs.GameOverCode.GDNewText5Objects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(0).getChild(1).getChild("score").getAsNumber()));
+}
+}{for(var i = 0, len = gdjs.GameOverCode.GDNewText6Objects1.length ;i < len;++i) {
+    gdjs.GameOverCode.GDNewText6Objects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(0).getChild(2).getChild("score").getAsNumber()));
 }
 }}
 
@@ -194,6 +212,12 @@ gdjs.GameOverCode.GDbackObjects1.length = 0;
 gdjs.GameOverCode.GDbackObjects2.length = 0;
 gdjs.GameOverCode.GDNewText3Objects1.length = 0;
 gdjs.GameOverCode.GDNewText3Objects2.length = 0;
+gdjs.GameOverCode.GDNewText4Objects1.length = 0;
+gdjs.GameOverCode.GDNewText4Objects2.length = 0;
+gdjs.GameOverCode.GDNewText5Objects1.length = 0;
+gdjs.GameOverCode.GDNewText5Objects2.length = 0;
+gdjs.GameOverCode.GDNewText6Objects1.length = 0;
+gdjs.GameOverCode.GDNewText6Objects2.length = 0;
 
 gdjs.GameOverCode.eventsList1(runtimeScene);
 gdjs.GameOverCode.GDPixelPlatformerFarmExpansion18x18Objects1.length = 0;
@@ -216,6 +240,12 @@ gdjs.GameOverCode.GDbackObjects1.length = 0;
 gdjs.GameOverCode.GDbackObjects2.length = 0;
 gdjs.GameOverCode.GDNewText3Objects1.length = 0;
 gdjs.GameOverCode.GDNewText3Objects2.length = 0;
+gdjs.GameOverCode.GDNewText4Objects1.length = 0;
+gdjs.GameOverCode.GDNewText4Objects2.length = 0;
+gdjs.GameOverCode.GDNewText5Objects1.length = 0;
+gdjs.GameOverCode.GDNewText5Objects2.length = 0;
+gdjs.GameOverCode.GDNewText6Objects1.length = 0;
+gdjs.GameOverCode.GDNewText6Objects2.length = 0;
 
 
 return;
