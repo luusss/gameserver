@@ -374,6 +374,7 @@ gdjs.copyArray(runtimeScene.getObjects("touch"), gdjs.preCode.GDtouchObjects1);
 }{for(var i = 0, len = gdjs.preCode.GDTrygrabObjects1.length ;i < len;++i) {
     gdjs.preCode.GDTrygrabObjects1[i].hide(false);
 }
+}{runtimeScene.getGame().getVariables().getFromIndex(1).getChild("score").setNumber(0);
 }}
 
 }
