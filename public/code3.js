@@ -49,7 +49,11 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
+gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.GameOverCode.GDNewText3Objects1);
 {gdjs.evtTools.sound.playMusic(runtimeScene, "3938a34c4b22efe9c3bfe7a3c4413bdc65468d15944869fd733517f647ea38b7_Night in Venice.aac", false, 20, 1);
+}{for(var i = 0, len = gdjs.GameOverCode.GDNewText3Objects1.length ;i < len;++i) {
+    gdjs.GameOverCode.GDNewText3Objects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(runtimeScene.getGame().getVariables().getFromIndex(1).getChild("score").getAsNumber()));
+}
 }}
 
 }
@@ -160,11 +164,7 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.GameOverCode.GDNewText3Objects1);
-{for(var i = 0, len = gdjs.GameOverCode.GDNewText3Objects1.length ;i < len;++i) {
-    gdjs.GameOverCode.GDNewText3Objects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("GameData").getChild("score"))));
 }
-}}
 
 }
 
