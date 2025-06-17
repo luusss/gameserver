@@ -551,7 +551,7 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("TimerText"), gdjs.preCode.GDTimerTextObjects1);
 {for(var i = 0, len = gdjs.preCode.GDTimerTextObjects1.length ;i < len;++i) {
-    gdjs.preCode.GDTimerTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().getFromIndex(2))));
+    gdjs.preCode.GDTimerTextObjects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("GameData").getChild("time"))));
 }
 }}
 
