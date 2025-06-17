@@ -18,6 +18,8 @@ gdjs.GameOverCode.GDNewText2Objects1= [];
 gdjs.GameOverCode.GDNewText2Objects2= [];
 gdjs.GameOverCode.GDbackObjects1= [];
 gdjs.GameOverCode.GDbackObjects2= [];
+gdjs.GameOverCode.GDNewText3Objects1= [];
+gdjs.GameOverCode.GDNewText3Objects2= [];
 
 
 gdjs.GameOverCode.mapOfGDgdjs_9546GameOverCode_9546GDbuttom_959595950Objects1Objects = Hashtable.newFrom({"buttom_0": gdjs.GameOverCode.GDbuttom_95950Objects1});
@@ -158,7 +160,11 @@ if (isConditionTrue_0) {
 
 let isConditionTrue_0 = false;
 {
+gdjs.copyArray(runtimeScene.getObjects("NewText3"), gdjs.GameOverCode.GDNewText3Objects1);
+{for(var i = 0, len = gdjs.GameOverCode.GDNewText3Objects1.length ;i < len;++i) {
+    gdjs.GameOverCode.GDNewText3Objects1[i].getBehavior("Text").setText(gdjs.evtTools.common.toString(gdjs.evtTools.variable.getVariableNumber(runtimeScene.getScene().getVariables().get("GameData").getChild("score"))));
 }
+}}
 
 }
 
@@ -186,6 +192,8 @@ gdjs.GameOverCode.GDNewText2Objects1.length = 0;
 gdjs.GameOverCode.GDNewText2Objects2.length = 0;
 gdjs.GameOverCode.GDbackObjects1.length = 0;
 gdjs.GameOverCode.GDbackObjects2.length = 0;
+gdjs.GameOverCode.GDNewText3Objects1.length = 0;
+gdjs.GameOverCode.GDNewText3Objects2.length = 0;
 
 gdjs.GameOverCode.eventsList1(runtimeScene);
 gdjs.GameOverCode.GDPixelPlatformerFarmExpansion18x18Objects1.length = 0;
@@ -206,6 +214,8 @@ gdjs.GameOverCode.GDNewText2Objects1.length = 0;
 gdjs.GameOverCode.GDNewText2Objects2.length = 0;
 gdjs.GameOverCode.GDbackObjects1.length = 0;
 gdjs.GameOverCode.GDbackObjects2.length = 0;
+gdjs.GameOverCode.GDNewText3Objects1.length = 0;
+gdjs.GameOverCode.GDNewText3Objects2.length = 0;
 
 
 return;

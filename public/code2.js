@@ -521,7 +521,7 @@ isConditionTrue_0 = gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSecondsOrNaN
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Trygrab"), gdjs.preCode.GDTrygrabObjects1);
 {gdjs.evtTools.runtimeScene.resetTimer(runtimeScene, "Countdown");
-}{runtimeScene.getGame().getVariables().getFromIndex(1).getChild("time").sub(1);
+}{runtimeScene.getGame().getVariables().getFromIndex(1).getChild("time").setNumber(gdjs.evtTools.runtimeScene.getTimerElapsedTimeInSeconds(runtimeScene, "Countdown"));
 }{for(var i = 0, len = gdjs.preCode.GDTrygrabObjects1.length ;i < len;++i) {
     gdjs.preCode.GDTrygrabObjects1[i].hide();
 }
