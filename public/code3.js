@@ -26,6 +26,20 @@ gdjs.GameOverCode.GDNewText5Objects1= [];
 gdjs.GameOverCode.GDNewText5Objects2= [];
 gdjs.GameOverCode.GDNewText6Objects1= [];
 gdjs.GameOverCode.GDNewText6Objects2= [];
+gdjs.GameOverCode.GDNewText7Objects1= [];
+gdjs.GameOverCode.GDNewText7Objects2= [];
+gdjs.GameOverCode.GD_9595123Objects1= [];
+gdjs.GameOverCode.GD_9595123Objects2= [];
+gdjs.GameOverCode.GDNewSprite2Objects1= [];
+gdjs.GameOverCode.GDNewSprite2Objects2= [];
+gdjs.GameOverCode.GDNewSprite3Objects1= [];
+gdjs.GameOverCode.GDNewSprite3Objects2= [];
+gdjs.GameOverCode.GDNewText8Objects1= [];
+gdjs.GameOverCode.GDNewText8Objects2= [];
+gdjs.GameOverCode.GDNewText9Objects1= [];
+gdjs.GameOverCode.GDNewText9Objects2= [];
+gdjs.GameOverCode.GDNewText10Objects1= [];
+gdjs.GameOverCode.GDNewText10Objects2= [];
 
 
 gdjs.GameOverCode.mapOfGDgdjs_9546GameOverCode_9546GDbuttom_959595950Objects1Objects = Hashtable.newFrom({"buttom_0": gdjs.GameOverCode.GDbuttom_95950Objects1});
@@ -84,8 +98,14 @@ let isConditionTrue_0 = false;
 {
 gdjs.copyArray(runtimeScene.getObjects("buttom_0"), gdjs.GameOverCode.GDbuttom_95950Objects1);
 {gdjs.evtTools.camera.centerCamera(runtimeScene, (gdjs.GameOverCode.GDbuttom_95950Objects1.length !== 0 ? gdjs.GameOverCode.GDbuttom_95950Objects1[0] : null), true, "", 0);
-}{gdjs.evtTools.camera.setCameraZoom(runtimeScene, 1.5, "", 0);
 }}
+
+}
+
+
+{
+
+
 
 }
 
@@ -218,6 +238,20 @@ gdjs.GameOverCode.GDNewText5Objects1.length = 0;
 gdjs.GameOverCode.GDNewText5Objects2.length = 0;
 gdjs.GameOverCode.GDNewText6Objects1.length = 0;
 gdjs.GameOverCode.GDNewText6Objects2.length = 0;
+gdjs.GameOverCode.GDNewText7Objects1.length = 0;
+gdjs.GameOverCode.GDNewText7Objects2.length = 0;
+gdjs.GameOverCode.GD_9595123Objects1.length = 0;
+gdjs.GameOverCode.GD_9595123Objects2.length = 0;
+gdjs.GameOverCode.GDNewSprite2Objects1.length = 0;
+gdjs.GameOverCode.GDNewSprite2Objects2.length = 0;
+gdjs.GameOverCode.GDNewSprite3Objects1.length = 0;
+gdjs.GameOverCode.GDNewSprite3Objects2.length = 0;
+gdjs.GameOverCode.GDNewText8Objects1.length = 0;
+gdjs.GameOverCode.GDNewText8Objects2.length = 0;
+gdjs.GameOverCode.GDNewText9Objects1.length = 0;
+gdjs.GameOverCode.GDNewText9Objects2.length = 0;
+gdjs.GameOverCode.GDNewText10Objects1.length = 0;
+gdjs.GameOverCode.GDNewText10Objects2.length = 0;
 
 gdjs.GameOverCode.eventsList1(runtimeScene);
 gdjs.GameOverCode.GDPixelPlatformerFarmExpansion18x18Objects1.length = 0;
@@ -246,6 +280,20 @@ gdjs.GameOverCode.GDNewText5Objects1.length = 0;
 gdjs.GameOverCode.GDNewText5Objects2.length = 0;
 gdjs.GameOverCode.GDNewText6Objects1.length = 0;
 gdjs.GameOverCode.GDNewText6Objects2.length = 0;
+gdjs.GameOverCode.GDNewText7Objects1.length = 0;
+gdjs.GameOverCode.GDNewText7Objects2.length = 0;
+gdjs.GameOverCode.GD_9595123Objects1.length = 0;
+gdjs.GameOverCode.GD_9595123Objects2.length = 0;
+gdjs.GameOverCode.GDNewSprite2Objects1.length = 0;
+gdjs.GameOverCode.GDNewSprite2Objects2.length = 0;
+gdjs.GameOverCode.GDNewSprite3Objects1.length = 0;
+gdjs.GameOverCode.GDNewSprite3Objects2.length = 0;
+gdjs.GameOverCode.GDNewText8Objects1.length = 0;
+gdjs.GameOverCode.GDNewText8Objects2.length = 0;
+gdjs.GameOverCode.GDNewText9Objects1.length = 0;
+gdjs.GameOverCode.GDNewText9Objects2.length = 0;
+gdjs.GameOverCode.GDNewText10Objects1.length = 0;
+gdjs.GameOverCode.GDNewText10Objects2.length = 0;
 
 
 return;
